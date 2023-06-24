@@ -167,4 +167,7 @@ DJOSER = {
 'SEND_ACTIVATION_EMAIL' : False
 }
 
-Ivan Xavier
+try:
+    from .server_settings import *
+except ImportError:
+    pass
